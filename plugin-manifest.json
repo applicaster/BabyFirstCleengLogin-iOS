@@ -1,7 +1,7 @@
 {
 	"api": {
 		"require_startup_execution": true,
-		"class_name": "CleengLogin.ZappCleengLogin"
+		"class_name": "BabyFirstCleengLogin.ZappCleengLogin"
 	},
 	"platform": "ios",
 	"author_name": "Roi Kedarya",
@@ -39,7 +39,8 @@
 		}]
 	},
 	"ui_builder_support": false,
-	"custom_configuration_fields": [{
+	"custom_configuration_fields": [
+    {
 			"type": "text",
 			"key": "cleeng_login_publisher_id",
 			"tooltip_text": "The Cleeng publisher id"
