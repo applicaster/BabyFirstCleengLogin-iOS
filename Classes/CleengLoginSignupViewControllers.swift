@@ -758,16 +758,16 @@ internal class CleengSignUpViewController : _CleengBaseSignViewController {
         let oldText = (textField.text ?? "")
         let text = oldText.replacingCharacters(in: Range(range, in: oldText)!, with: string)
         if textField === emailTextField {
-            signButton.isEnabled = !(text.isEmpty) && !(passwordTextField.text?.isEmpty ?? true)
+            signButton.isEnabled = true //!(text.isEmpty) && !(passwordTextField.text?.isEmpty ?? true)
         } else if textField === passwordTextField {
-            signButton.isEnabled = !(emailTextField.text?.isEmpty ?? true) && !(text.isEmpty)
+            signButton.isEnabled = true //!(emailTextField.text?.isEmpty ?? true) && !(text.isEmpty)
         }
         
         return true
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        signButton.isEnabled = !(emailTextField.text?.isEmpty ?? true) && !(passwordTextField.text?.isEmpty ?? true)
+        signButton.isEnabled = true //!(emailTextField.text?.isEmpty ?? true) && !(passwordTextField.text?.isEmpty ?? true)
     }
     
     private func signUpConfigureViews() {
