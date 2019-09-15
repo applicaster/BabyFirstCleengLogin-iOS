@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version             = '1.0.0'
   s.summary             = 'A plugin for Cleeng login & subscription for Zapp iOS.'
   s.description         = 'Plugin to make login & subscription with Cleeng for baby apps'
-  s.homepage            = 'https://github.com/applicaster/login-plugin-cleeng-ios'
+  s.homepage            = 'https://github.com/applicaster/BabyFirstCleengLogin-iOS/'
   s.license             = 'MIT'
   s.author              = { 'Roi Kedarya' => 'r.kedarya@applicaster.com' }
   s.source              = { :git => 'git@github.com:applicaster/BabyFirstCleengLogin-iOS.git', :tag => s.version.to_s }
