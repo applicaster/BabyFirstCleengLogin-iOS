@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CleengSettingsScreenTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CleengSettingsScreenTableViewCell" id="iOf-ZY-N5A" customClass="CleengSettingsScreenTableViewCell" customModule="CleengLogin">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iOf-ZY-N5A" id="2kW-cl-GCF">
+                <rect key="frame" x="0.0" y="0.0" width="295" height="47.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qoK-mF-oKb">
+                        <rect key="frame" x="20" y="0.0" width="48" height="48.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="h9u-13-9yB"/>
+                            <constraint firstAttribute="height" constant="48" id="zxR-3l-grH"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cleeng_settings_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-2o-8yL">
+                        <rect key="frame" x="251" y="12.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="9tJ-tw-hId"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings table item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcg-kA-RGb">
+                        <rect key="frame" x="76" y="13.5" width="138" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="ZfS-e7-Uad"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qoK-mF-oKb" secondAttribute="bottom" id="1xc-SP-bMD"/>
+                    <constraint firstItem="lcg-kA-RGb" firstAttribute="centerY" secondItem="2kW-cl-GCF" secondAttribute="centerY" id="EYg-5H-Pj6"/>
+                    <constraint firstItem="fMs-2o-8yL" firstAttribute="centerY" secondItem="2kW-cl-GCF" secondAttribute="centerY" id="GGh-3X-MbV"/>
+                    <constraint firstItem="lcg-kA-RGb" firstAttribute="leading" secondItem="qoK-mF-oKb" secondAttribute="trailing" constant="8" id="O0c-WO-Ddd"/>
+                    <constraint firstItem="qoK-mF-oKb" firstAttribute="top" secondItem="2kW-cl-GCF" secondAttribute="top" id="OPB-P4-vYi"/>
+                    <constraint firstAttribute="trailing" secondItem="fMs-2o-8yL" secondAttribute="trailing" constant="20" id="YaB-jf-g4I"/>
+                    <constraint firstItem="qoK-mF-oKb" firstAttribute="leading" secondItem="2kW-cl-GCF" secondAttribute="leading" constant="20" id="f5U-H8-2mf"/>
+                    <constraint firstItem="lcg-kA-RGb" firstAttribute="top" secondItem="2kW-cl-GCF" secondAttribute="topMargin" constant="2" id="jR4-dA-f2L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="arrowImageView" destination="fMs-2o-8yL" id="RSM-tg-8ti"/>
+                <outlet property="itemImageView" destination="qoK-mF-oKb" id="Q6f-Eu-dsa"/>
+                <outlet property="itemLabel" destination="lcg-kA-RGb" id="Ew3-rn-DHZ"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="89"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cleeng_settings_arrow.png" width="24" height="24"/>
+    </resources>
+</document>

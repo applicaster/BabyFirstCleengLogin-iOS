@@ -1,0 +1,406 @@
+{
+	"api": {
+		"require_startup_execution": true,
+		"class_name": "CleengLogin.ZappCleengLogin"
+	},
+	"platform": "ios",
+	"author_name": "Roi Kedarya",
+	"author_email": "r.kedarya@applicaster.com",
+	"manifest_version": "1.0.0",
+	"name": "BabyFirstCleengLogin",
+	"description": "A plugin for Cleeng login and subscription",
+	"type": "login",
+	"screen": true,
+	"identifier": "BabyFirstCleengLogin",
+	"dependency_name": "BabyFirstCleengLogin",
+	"dependency_version": "1.0.0",
+	"dependency_repository_url": [
+		"git@github.com:applicaster/BabyFirstCleengLogin-iOS.git"
+	],
+	"whitelisted_account_ids": [
+		"5c7e272b51a78800083d1187",
+		"5af949534da8f300080050f9",
+		"5cc6f5d65d639a000cf17876"
+	],
+	"min_zapp_sdk": "12.1.0-Dev",
+	"deprecated_since_zapp_sdk": "",
+	"unsupported_since_zapp_sdk": "",
+	"react_native": false,
+	"hooks": {
+		"fields": [{
+			"group": true,
+			"label": "Before Load",
+			"folded": true,
+			"fields": [{
+				"key": "preload_plugins",
+				"type": "preload_plugins_selector",
+				"label": "Select Plugins"
+			}]
+		}]
+	},
+	"ui_builder_support": false,
+	"custom_configuration_fields": [{
+			"type": "text",
+			"key": "cleeng_login_publisher_id",
+			"tooltip_text": "The Cleeng publisher id"
+		},
+		{
+			"type": "checkbox",
+			"key": "cleeng_login_start_on_app_launch",
+			"tooltip_text": "Flag to indicate if to present the plugin on app launch"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_start_with_action",
+			"tooltip_text": "The action to launch the plugin with. Can be one of 3 options: sign_up, sign_in or subscriptions_list. Default: sign_in"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_help_url",
+			"tooltip_text": "Client help url. Can be web url or iOS deep-linking url to open Phone/Messages/Mail default iOS app"
+		},
+		{
+			"type": "checkbox",
+			"key": "cleeng_login_facebook_login_available",
+			"tooltip_text": "Flag to indicate if login/signup to Cleeng with Facebook is available"
+		},
+		{
+			"type": "checkbox",
+			"key": "cleeng_login_purchase_restore_available",
+			"tooltip_text": "Flag to indicate if AppStore purchase restore available"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_details",
+			"tooltip_text": "Text for details on sign up screen. For example: Please enter your details to create an account:"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_sign_in_button_text",
+			"tooltip_text": "Text for sign in button. For example: Sign in with SIGN IN"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_facebook_button_text",
+			"tooltip_text": "Text for Facebook sign in button. For example: Sign in with Facebook"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_email_placeholder_text",
+			"tooltip_text": "Text for Email text field placeholder. For example: Email"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_password_placeholder_text",
+			"tooltip_text": "Text for Password text field placeholder. For example: Password"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_reset_password_email_placeholder_text",
+			"tooltip_text": "Text for Reset password email text field placeholder. For example: Email"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_no_account_text",
+			"tooltip_text": "Text for no account description on sign in view. For example: Don't have an account?"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_sign_up_text",
+			"tooltip_text": "Text for no account action on sign in view. For example: Sign Up"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_account_text",
+			"tooltip_text": "Text for restore description on sign up/in view. For example: If you already purchased an account"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_restore_text",
+			"tooltip_text": "Text for restore action on sign up/in view. For example: Restore"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_restore_title_text",
+			"tooltip_text": "Text for restore view title. For example: Restore Your Account"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_restore_description_text",
+			"tooltip_text": "Text for restore view subtitle. For example: In order to restore your account\nplease provide the details\nyou registered with:"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_restore_button_text",
+			"tooltip_text": "Text for restore button. For example: RESTORE"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_trouble_restore_text",
+			"tooltip_text": "Text for restore help description. For example: Having a trouble?"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_help_text",
+			"tooltip_text": "Text for restore help action. For example: Contact Us"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_new_account_details_text",
+			"tooltip_text": "Text for Sign up view description. For example: Please enter your details:"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_sign_up_button_text",
+			"tooltip_text": "Text for sign up button. For example: SIGN UP"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_sign_in_text",
+			"tooltip_text": "Text for already have an account action on sign up view. For example: Sign In"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_have_account_text",
+			"tooltip_text": "Text for already have an account description on sign up view. For example: Already have an account?"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_action_alternative_text",
+			"tooltip_text": "Text for alternative label between sign up/in & Facebook buttons. For example: - OR -"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_reset_password_title_text",
+			"tooltip_text": "Text for reset password view title. For example: Reset Your Password"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_reset_password_details_text",
+			"tooltip_text": "Text for reset password view subtitle. For example: Enter you email to reset your password:"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_reset_password_action_details_text",
+			"tooltip_text": "Text for reset password description in sign in view. For example: Forgot your password?"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_reset_password_action_text",
+			"tooltip_text": "Text for reset password description in sign in view. For example: Reset"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_reset_password_action_button_text",
+			"tooltip_text": "Text for reset password button. For example: RESET PASSWORD"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_subscription_title_text",
+			"tooltip_text": "Text for IAP-s view title. For example: Choose Your Subscription"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_legal",
+			"tooltip_text": "Text for IAP-s view legal. For example: Payment will charged to iTunes account at confirmation of purchase"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_confirm_title",
+			"tooltip_text": "Text for login confirmation action button. For example: Congratulations!"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_confirm_message",
+			"tooltip_text": "Text for login confirmation alert message. For example: You are successfully subscribed to this channel. Enjoy!!!"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_confirm_button_title",
+			"tooltip_text": "Text for login confirmation action button. For example: OK"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_reset_password_email_sent",
+			"tooltip_text": "Text for reset password email sent. For example: Please check you email for further instructions"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_subscribe",
+			"tooltip_text": "Text for subscribe button action. For example: SUBSCRIBE FOR"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_alert_cancel_action",
+			"tooltip_text": "Text for alert cancel button. For example: Cancel"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_alert_contact_us_action",
+			"tooltip_text": "Text for alert contact us button. For example: Contact Us"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_alert_retry_action",
+			"tooltip_text": "Text for alert retry button. For example: Retry"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_alert_ok_action",
+			"tooltip_text": "Text for alert ok button. For example: OK"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_internal_title",
+			"tooltip_text": "Text for internal alert title. For example: Error"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_internal_message",
+			"tooltip_text": "Text for internal alert message. For example: Something went wrong"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_invalide_email_entered_title",
+			"tooltip_text": "Text for alert title presented when user enters invalid email. For example: Invalid Email"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_invalide_email_entered_message",
+			"tooltip_text": "Text for alert message presented when user enters invalid email. For example: The email you entered isn't a valid email address"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_email_required_title",
+			"tooltip_text": "Text for alert title presented when user didn't enter email. For example: Email Required"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_email_required_message",
+			"tooltip_text": "Text for alert message presented when user didn't enter email. For example: Please enter your email"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_password_required_title",
+			"tooltip_text": "Text for alert title presented when user didn't enter password. For example: Password Required"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_password_required_message",
+			"tooltip_text": "Text for alert message presented when user didn't enter password. For example: Please enter your password"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_invalid_email_credentials_title",
+			"tooltip_text": "Text for alert title presented when Cleeng api returns error code 10"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_invalid_email_credentials_message",
+			"tooltip_text": "Text for alert message presented when Cleeng api returns error code 10"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_credentials_title",
+			"tooltip_text": "Text for alert title presented when Cleeng api returns error code 11"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_credentials_message",
+			"tooltip_text": "Text for alert message presented when Cleeng api returns error code 11"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_expired_title",
+			"tooltip_text": "Text for alert title presented when Cleeng api returns error code 12"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_expired_message",
+			"tooltip_text": "Text for alert message presented when Cleeng api returns error code 12"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_existing_user_credentials_title",
+			"tooltip_text": "Text for alert title presented when Cleeng api returns error code 13"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_existing_user_credentials_message",
+			"tooltip_text": "Text for alert message presented when Cleeng api returns error code 13"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_invalid_credentials_title",
+			"tooltip_text": "Text for alert title presented when Cleeng api returns error code 15"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_invalid_credentials_message",
+			"tooltip_text": "Text for alert message presented when Cleeng api returns error code 15"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_facebook_email_permission_required_title",
+			"tooltip_text": "Text for alert title presented when user made login with Facebook without granting email permission"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_error_facebook_email_permission_required_message",
+			"tooltip_text": "Text for alert message presented when user made login with Facebook without granting email permission"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_offer_id_to_tag_text",
+			"tooltip_text": "Map of offers id to tag localized (in Subscriptions view). For example: offerId1=BEST OFFER;offerId3=10% OFF"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_no_purchases_to_restore_alert_message",
+			"tooltip_text": "Text for alert message when no IAP purchases to restore with. For example: No previous purchases to restore"
+		},
+		{
+			"type": "checkbox",
+			"key": "cleeng_login_redeem_coupon_available",
+			"tooltip_text": "Flag to indicate if coupons is available or not"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_sbscriptions_redeem_action",
+			"tooltip_text": "Text for coupon action button in Subscriptions view"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_redeem_title",
+			"tooltip_text": "Text for title in coupon view"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_redeem_description",
+			"tooltip_text": "Text for details in coupon view"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_redeem_placeholder",
+			"tooltip_text": "Text for coupon placeholder in coupon view"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_redeem_action",
+			"tooltip_text": "Text for coupon action button in coupon view"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_redeem_success",
+			"tooltip_text": "Text for coupon success message"
+		},
+		{
+			"type": "text",
+			"key": "cleeng_login_redeem_error",
+			"tooltip_text": "Text for coupon alert message when no alert message returns from web-service"
+		}
+	],
+	"targets": [
+		"mobile"
+	]
+}
