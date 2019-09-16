@@ -13,7 +13,7 @@
         <!--Cleeng Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SignIn" id="BYZ-38-t0r" customClass="CleengSignInViewController" customModule="CleengLogin" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignIn" id="BYZ-38-t0r" customClass="CleengSignInViewController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,7 +282,7 @@
         <!--Cleeng Restore View Controller-->
         <scene sceneID="2ZW-Ld-qJH">
             <objects>
-                <viewController storyboardIdentifier="Restore" id="1LK-jM-KWF" customClass="CleengRestoreViewController" customModule="CleengLogin" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Restore" id="1LK-jM-KWF" customClass="CleengRestoreViewController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0tG-Nr-VbZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,7 +503,7 @@ you registered with:</string>
         <!--Cleeng Loading View Controller-->
         <scene sceneID="02Y-Si-nlA">
             <objects>
-                <viewController storyboardIdentifier="Loading" id="UAJ-8g-RaS" customClass="CleengLoadingViewController" customModule="CleengLogin" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Loading" id="UAJ-8g-RaS" customClass="CleengLoadingViewController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AHW-CW-F1W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -567,7 +567,7 @@ you registered with:</string>
         <!--Cleeng Settings Screen View Controller-->
         <scene sceneID="VGL-RF-sEU">
             <objects>
-                <viewController storyboardIdentifier="Settings" id="MgR-FX-saD" customClass="CleengSettingsScreenViewController" customModule="CleengLogin" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Settings" id="MgR-FX-saD" customClass="CleengSettingsScreenViewController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wuF-1l-WOZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -739,7 +739,7 @@ you registered with:</string>
         <!--Cleeng Offers View Controller-->
         <scene sceneID="470-8Y-Djh">
             <objects>
-                <viewController storyboardIdentifier="OffersList" id="FEu-r4-gg7" customClass="CleengOffersViewController" customModule="CleengLogin" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OffersList" id="FEu-r4-gg7" customClass="CleengOffersViewController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KW2-yU-eGj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1158,7 +1158,7 @@ you registered with:</string>
         <!--Cleeng Login Alert Controller-->
         <scene sceneID="7k9-Dl-xzj">
             <objects>
-                <viewController storyboardIdentifier="Alert" id="nzE-mg-a58" customClass="CleengLoginAlertController" customModule="CleengLogin" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Alert" id="nzE-mg-a58" customClass="CleengLoginAlertController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bmK-8d-URr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1226,7 +1226,7 @@ you registered with:</string>
         <!--Cleeng Reset Password View Controller-->
         <scene sceneID="aag-ou-GQQ">
             <objects>
-                <viewController id="I36-fc-y7a" customClass="CleengResetPasswordViewController" customModule="CleengLogin" sceneMemberID="viewController">
+                <viewController id="I36-fc-y7a" customClass="CleengResetPasswordViewController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7kD-Hz-x8T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1407,7 +1407,8 @@ you registered with:</string>
         <!--Cleeng Sign Up View Controller-->
         <scene sceneID="asR-Pw-6AK">
             <objects>
-                <viewController storyboardIdentifier="SignUp" id="YNA-q7-j4Z" customClass="CleengSignUpViewController" customModule="CleengLogin" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Jb-HN-12c" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="SignUp" id="YNA-q7-j4Z" customClass="CleengSignUpViewController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ff-yh-rQ6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1692,14 +1693,13 @@ to create your account:</string>
                         <outlet property="signTextsStackView" destination="odV-I0-ppF" id="VuS-GW-LVm"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Jb-HN-12c" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1872.8" y="130.88455772113943"/>
         </scene>
         <!--Cleeng Redeem Coupon View Controller-->
         <scene sceneID="ZWZ-pe-acb">
             <objects>
-                <viewController storyboardIdentifier="RedeemCoupon" id="kDL-iW-3gJ" customClass="CleengRedeemCouponViewController" customModule="CleengLogin" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RedeemCoupon" id="kDL-iW-3gJ" customClass="CleengRedeemCouponViewController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3oT-PV-VvK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1857,7 +1857,7 @@ to create your account:</string>
         <!--Cleeng Settings Split Screen View Controller-->
         <scene sceneID="iOt-bx-lK7">
             <objects>
-                <splitViewController storyboardIdentifier="SettingsSplit" id="lRS-z4-poE" customClass="CleengSettingsSplitScreenViewController" customModule="CleengLogin" sceneMemberID="viewController"/>
+                <splitViewController storyboardIdentifier="SettingsSplit" id="lRS-z4-poE" customClass="CleengSettingsSplitScreenViewController" customModule="BabyFirstCleengLogin" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="736-QU-jFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886" y="-1360"/>
