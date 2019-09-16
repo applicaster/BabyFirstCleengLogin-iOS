@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2374C736232FB5C800900BF0 /* BabyFirstCleengLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2374C72C232FB5C800900BF0 /* BabyFirstCleengLogin.framework */; };
+		2374C73B232FB5C800900BF0 /* BabyFirstCleengLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C73A232FB5C800900BF0 /* BabyFirstCleengLoginTests.swift */; };
+		2374C73D232FB5C800900BF0 /* BabyFirstCleengLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 2374C72F232FB5C800900BF0 /* BabyFirstCleengLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2374C768232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2374C747232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.xib */; };
+		2374C769232FB6C700900BF0 /* cleeng_settings_profile_logout@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2374C748232FB6C700900BF0 /* cleeng_settings_profile_logout@3x.png */; };
+		2374C76A232FB6C700900BF0 /* cleeng_settings_profile_logout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2374C749232FB6C700900BF0 /* cleeng_settings_profile_logout@2x.png */; };
+		2374C76B232FB6C700900BF0 /* cleeng_settings_profile_logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 2374C74A232FB6C700900BF0 /* cleeng_settings_profile_logout.png */; };
+		2374C76C232FB6C700900BF0 /* cleeng_settings_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2374C74B232FB6C700900BF0 /* cleeng_settings_arrow.png */; };
+		2374C76D232FB6C700900BF0 /* cleeng_settings_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2374C74C232FB6C700900BF0 /* cleeng_settings_arrow@2x.png */; };
+		2374C76E232FB6C700900BF0 /* CleengMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2374C74D232FB6C700900BF0 /* CleengMain.storyboard */; };
+		2374C76F232FB6C700900BF0 /* cleeng_settings_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2374C74E232FB6C700900BF0 /* cleeng_settings_arrow@3x.png */; };
+		2374C770232FB6C700900BF0 /* CleengLoginAndSubscriptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C750232FB6C700900BF0 /* CleengLoginAndSubscriptionController.swift */; };
+		2374C771232FB6C700900BF0 /* CleengRestoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C751232FB6C700900BF0 /* CleengRestoreViewController.swift */; };
+		2374C772232FB6C700900BF0 /* CleengSettingsSplitScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C752232FB6C700900BF0 /* CleengSettingsSplitScreenViewController.swift */; };
+		2374C773232FB6C700900BF0 /* CleengUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C753232FB6C700900BF0 /* CleengUser.swift */; };
+		2374C774232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C754232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.swift */; };
+		2374C775232FB6C700900BF0 /* DispatchQueue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C755232FB6C700900BF0 /* DispatchQueue+Extension.swift */; };
+		2374C776232FB6C700900BF0 /* ZappCleengSettingScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C756232FB6C700900BF0 /* ZappCleengSettingScreenManager.swift */; };
+		2374C777232FB6C700900BF0 /* CleengResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C757232FB6C700900BF0 /* CleengResetPasswordViewController.swift */; };
+		2374C778232FB6C700900BF0 /* CleengRedeemCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C758232FB6C700900BF0 /* CleengRedeemCouponViewController.swift */; };
+		2374C779232FB6C700900BF0 /* ZappCleengLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C759232FB6C700900BF0 /* ZappCleengLogin.swift */; };
+		2374C77A232FB6C700900BF0 /* UIKit+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C75A232FB6C700900BF0 /* UIKit+Utils.swift */; };
+		2374C77B232FB6C700900BF0 /* CleengGeneralTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C75B232FB6C700900BF0 /* CleengGeneralTextViewController.swift */; };
+		2374C77C232FB6C700900BF0 /* CleengOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C75C232FB6C700900BF0 /* CleengOffersViewController.swift */; };
+		2374C77D232FB6C700900BF0 /* CleengLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C75D232FB6C700900BF0 /* CleengLoadingViewController.swift */; };
+		2374C77E232FB6C700900BF0 /* CleengLoginAndSubscribeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C75E232FB6C700900BF0 /* CleengLoginAndSubscribeApi.swift */; };
+		2374C77F232FB6C700900BF0 /* CleengProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C75F232FB6C700900BF0 /* CleengProfileViewController.swift */; };
+		2374C780232FB6C700900BF0 /* CleengChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C760232FB6C700900BF0 /* CleengChangePasswordViewController.swift */; };
+		2374C781232FB6C700900BF0 /* CleengSettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C761232FB6C700900BF0 /* CleengSettingsScreenViewController.swift */; };
+		2374C782232FB6C700900BF0 /* EqualLinesContentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C762232FB6C700900BF0 /* EqualLinesContentLabel.swift */; };
+		2374C783232FB6C700900BF0 /* StoreProductsPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C763232FB6C700900BF0 /* StoreProductsPurchaseManager.swift */; };
+		2374C784232FB6C700900BF0 /* ZappCleengConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C764232FB6C700900BF0 /* ZappCleengConfiguration.swift */; };
+		2374C785232FB6C700900BF0 /* CleengSettingsBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C765232FB6C700900BF0 /* CleengSettingsBaseProtocol.swift */; };
+		2374C786232FB6C700900BF0 /* CleengLoginAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C766232FB6C700900BF0 /* CleengLoginAlertController.swift */; };
+		2374C787232FB6C700900BF0 /* CleengLoginSignupViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374C767232FB6C700900BF0 /* CleengLoginSignupViewControllers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2374C737232FB5C800900BF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2374C723232FB5C800900BF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2374C72B232FB5C800900BF0;
+			remoteInfo = BabyFirstCleengLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2374C72C232FB5C800900BF0 /* BabyFirstCleengLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BabyFirstCleengLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2374C72F232FB5C800900BF0 /* BabyFirstCleengLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabyFirstCleengLogin.h; sourceTree = "<group>"; };
+		2374C730232FB5C800900BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2374C735232FB5C800900BF0 /* BabyFirstCleengLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyFirstCleengLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2374C73A232FB5C800900BF0 /* BabyFirstCleengLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyFirstCleengLoginTests.swift; sourceTree = "<group>"; };
+		2374C73C232FB5C800900BF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2374C747232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CleengSettingsScreenTableViewCell.xib; sourceTree = "<group>"; };
+		2374C748232FB6C700900BF0 /* cleeng_settings_profile_logout@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cleeng_settings_profile_logout@3x.png"; sourceTree = "<group>"; };
+		2374C749232FB6C700900BF0 /* cleeng_settings_profile_logout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cleeng_settings_profile_logout@2x.png"; sourceTree = "<group>"; };
+		2374C74A232FB6C700900BF0 /* cleeng_settings_profile_logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cleeng_settings_profile_logout.png; sourceTree = "<group>"; };
+		2374C74B232FB6C700900BF0 /* cleeng_settings_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cleeng_settings_arrow.png; sourceTree = "<group>"; };
+		2374C74C232FB6C700900BF0 /* cleeng_settings_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cleeng_settings_arrow@2x.png"; sourceTree = "<group>"; };
+		2374C74D232FB6C700900BF0 /* CleengMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CleengMain.storyboard; sourceTree = "<group>"; };
+		2374C74E232FB6C700900BF0 /* cleeng_settings_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cleeng_settings_arrow@3x.png"; sourceTree = "<group>"; };
+		2374C750232FB6C700900BF0 /* CleengLoginAndSubscriptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengLoginAndSubscriptionController.swift; sourceTree = "<group>"; };
+		2374C751232FB6C700900BF0 /* CleengRestoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengRestoreViewController.swift; sourceTree = "<group>"; };
+		2374C752232FB6C700900BF0 /* CleengSettingsSplitScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengSettingsSplitScreenViewController.swift; sourceTree = "<group>"; };
+		2374C753232FB6C700900BF0 /* CleengUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengUser.swift; sourceTree = "<group>"; };
+		2374C754232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengSettingsScreenTableViewCell.swift; sourceTree = "<group>"; };
+		2374C755232FB6C700900BF0 /* DispatchQueue+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extension.swift"; sourceTree = "<group>"; };
+		2374C756232FB6C700900BF0 /* ZappCleengSettingScreenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZappCleengSettingScreenManager.swift; sourceTree = "<group>"; };
+		2374C757232FB6C700900BF0 /* CleengResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengResetPasswordViewController.swift; sourceTree = "<group>"; };
+		2374C758232FB6C700900BF0 /* CleengRedeemCouponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengRedeemCouponViewController.swift; sourceTree = "<group>"; };
+		2374C759232FB6C700900BF0 /* ZappCleengLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZappCleengLogin.swift; sourceTree = "<group>"; };
+		2374C75A232FB6C700900BF0 /* UIKit+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Utils.swift"; sourceTree = "<group>"; };
+		2374C75B232FB6C700900BF0 /* CleengGeneralTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengGeneralTextViewController.swift; sourceTree = "<group>"; };
+		2374C75C232FB6C700900BF0 /* CleengOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengOffersViewController.swift; sourceTree = "<group>"; };
+		2374C75D232FB6C700900BF0 /* CleengLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengLoadingViewController.swift; sourceTree = "<group>"; };
+		2374C75E232FB6C700900BF0 /* CleengLoginAndSubscribeApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengLoginAndSubscribeApi.swift; sourceTree = "<group>"; };
+		2374C75F232FB6C700900BF0 /* CleengProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengProfileViewController.swift; sourceTree = "<group>"; };
+		2374C760232FB6C700900BF0 /* CleengChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengChangePasswordViewController.swift; sourceTree = "<group>"; };
+		2374C761232FB6C700900BF0 /* CleengSettingsScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengSettingsScreenViewController.swift; sourceTree = "<group>"; };
+		2374C762232FB6C700900BF0 /* EqualLinesContentLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EqualLinesContentLabel.swift; sourceTree = "<group>"; };
+		2374C763232FB6C700900BF0 /* StoreProductsPurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreProductsPurchaseManager.swift; sourceTree = "<group>"; };
+		2374C764232FB6C700900BF0 /* ZappCleengConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZappCleengConfiguration.swift; sourceTree = "<group>"; };
+		2374C765232FB6C700900BF0 /* CleengSettingsBaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengSettingsBaseProtocol.swift; sourceTree = "<group>"; };
+		2374C766232FB6C700900BF0 /* CleengLoginAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengLoginAlertController.swift; sourceTree = "<group>"; };
+		2374C767232FB6C700900BF0 /* CleengLoginSignupViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleengLoginSignupViewControllers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2374C729232FB5C800900BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2374C732232FB5C800900BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2374C736232FB5C800900BF0 /* BabyFirstCleengLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2374C722232FB5C800900BF0 = {
+			isa = PBXGroup;
+			children = (
+				2374C72E232FB5C800900BF0 /* BabyFirstCleengLogin */,
+				2374C739232FB5C800900BF0 /* BabyFirstCleengLoginTests */,
+				2374C72D232FB5C800900BF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2374C72D232FB5C800900BF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2374C72C232FB5C800900BF0 /* BabyFirstCleengLogin.framework */,
+				2374C735232FB5C800900BF0 /* BabyFirstCleengLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2374C72E232FB5C800900BF0 /* BabyFirstCleengLogin */ = {
+			isa = PBXGroup;
+			children = (
+				2374C74F232FB6C700900BF0 /* Classes */,
+				2374C746232FB6C700900BF0 /* Storyboard */,
+				2374C72F232FB5C800900BF0 /* BabyFirstCleengLogin.h */,
+				2374C730232FB5C800900BF0 /* Info.plist */,
+			);
+			path = BabyFirstCleengLogin;
+			sourceTree = "<group>";
+		};
+		2374C739232FB5C800900BF0 /* BabyFirstCleengLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				2374C73A232FB5C800900BF0 /* BabyFirstCleengLoginTests.swift */,
+				2374C73C232FB5C800900BF0 /* Info.plist */,
+			);
+			path = BabyFirstCleengLoginTests;
+			sourceTree = "<group>";
+		};
+		2374C746232FB6C700900BF0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2374C74D232FB6C700900BF0 /* CleengMain.storyboard */,
+				2374C747232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.xib */,
+				2374C748232FB6C700900BF0 /* cleeng_settings_profile_logout@3x.png */,
+				2374C749232FB6C700900BF0 /* cleeng_settings_profile_logout@2x.png */,
+				2374C74A232FB6C700900BF0 /* cleeng_settings_profile_logout.png */,
+				2374C74B232FB6C700900BF0 /* cleeng_settings_arrow.png */,
+				2374C74C232FB6C700900BF0 /* cleeng_settings_arrow@2x.png */,
+				2374C74E232FB6C700900BF0 /* cleeng_settings_arrow@3x.png */,
+			);
+			path = Storyboard;
+			sourceTree = SOURCE_ROOT;
+		};
+		2374C74F232FB6C700900BF0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2374C750232FB6C700900BF0 /* CleengLoginAndSubscriptionController.swift */,
+				2374C751232FB6C700900BF0 /* CleengRestoreViewController.swift */,
+				2374C752232FB6C700900BF0 /* CleengSettingsSplitScreenViewController.swift */,
+				2374C753232FB6C700900BF0 /* CleengUser.swift */,
+				2374C754232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.swift */,
+				2374C755232FB6C700900BF0 /* DispatchQueue+Extension.swift */,
+				2374C756232FB6C700900BF0 /* ZappCleengSettingScreenManager.swift */,
+				2374C757232FB6C700900BF0 /* CleengResetPasswordViewController.swift */,
+				2374C758232FB6C700900BF0 /* CleengRedeemCouponViewController.swift */,
+				2374C759232FB6C700900BF0 /* ZappCleengLogin.swift */,
+				2374C75A232FB6C700900BF0 /* UIKit+Utils.swift */,
+				2374C75B232FB6C700900BF0 /* CleengGeneralTextViewController.swift */,
+				2374C75C232FB6C700900BF0 /* CleengOffersViewController.swift */,
+				2374C75D232FB6C700900BF0 /* CleengLoadingViewController.swift */,
+				2374C75E232FB6C700900BF0 /* CleengLoginAndSubscribeApi.swift */,
+				2374C75F232FB6C700900BF0 /* CleengProfileViewController.swift */,
+				2374C760232FB6C700900BF0 /* CleengChangePasswordViewController.swift */,
+				2374C761232FB6C700900BF0 /* CleengSettingsScreenViewController.swift */,
+				2374C762232FB6C700900BF0 /* EqualLinesContentLabel.swift */,
+				2374C763232FB6C700900BF0 /* StoreProductsPurchaseManager.swift */,
+				2374C764232FB6C700900BF0 /* ZappCleengConfiguration.swift */,
+				2374C765232FB6C700900BF0 /* CleengSettingsBaseProtocol.swift */,
+				2374C766232FB6C700900BF0 /* CleengLoginAlertController.swift */,
+				2374C767232FB6C700900BF0 /* CleengLoginSignupViewControllers.swift */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2374C727232FB5C800900BF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2374C73D232FB5C800900BF0 /* BabyFirstCleengLogin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2374C72B232FB5C800900BF0 /* BabyFirstCleengLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2374C740232FB5C800900BF0 /* Build configuration list for PBXNativeTarget "BabyFirstCleengLogin" */;
+			buildPhases = (
+				2374C727232FB5C800900BF0 /* Headers */,
+				2374C728232FB5C800900BF0 /* Sources */,
+				2374C729232FB5C800900BF0 /* Frameworks */,
+				2374C72A232FB5C800900BF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabyFirstCleengLogin;
+			productName = BabyFirstCleengLogin;
+			productReference = 2374C72C232FB5C800900BF0 /* BabyFirstCleengLogin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2374C734232FB5C800900BF0 /* BabyFirstCleengLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2374C743232FB5C800900BF0 /* Build configuration list for PBXNativeTarget "BabyFirstCleengLoginTests" */;
+			buildPhases = (
+				2374C731232FB5C800900BF0 /* Sources */,
+				2374C732232FB5C800900BF0 /* Frameworks */,
+				2374C733232FB5C800900BF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2374C738232FB5C800900BF0 /* PBXTargetDependency */,
+			);
+			name = BabyFirstCleengLoginTests;
+			productName = BabyFirstCleengLoginTests;
+			productReference = 2374C735232FB5C800900BF0 /* BabyFirstCleengLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2374C723232FB5C800900BF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = applicaster;
+				TargetAttributes = {
+					2374C72B232FB5C800900BF0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					2374C734232FB5C800900BF0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2374C726232FB5C800900BF0 /* Build configuration list for PBXProject "BabyFirstCleengLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2374C722232FB5C800900BF0;
+			productRefGroup = 2374C72D232FB5C800900BF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2374C72B232FB5C800900BF0 /* BabyFirstCleengLogin */,
+				2374C734232FB5C800900BF0 /* BabyFirstCleengLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2374C72A232FB5C800900BF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2374C76C232FB6C700900BF0 /* cleeng_settings_arrow.png in Resources */,
+				2374C76B232FB6C700900BF0 /* cleeng_settings_profile_logout.png in Resources */,
+				2374C76F232FB6C700900BF0 /* cleeng_settings_arrow@3x.png in Resources */,
+				2374C769232FB6C700900BF0 /* cleeng_settings_profile_logout@3x.png in Resources */,
+				2374C76E232FB6C700900BF0 /* CleengMain.storyboard in Resources */,
+				2374C768232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.xib in Resources */,
+				2374C76A232FB6C700900BF0 /* cleeng_settings_profile_logout@2x.png in Resources */,
+				2374C76D232FB6C700900BF0 /* cleeng_settings_arrow@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2374C733232FB5C800900BF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2374C728232FB5C800900BF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2374C774232FB6C700900BF0 /* CleengSettingsScreenTableViewCell.swift in Sources */,
+				2374C77D232FB6C700900BF0 /* CleengLoadingViewController.swift in Sources */,
+				2374C780232FB6C700900BF0 /* CleengChangePasswordViewController.swift in Sources */,
+				2374C77A232FB6C700900BF0 /* UIKit+Utils.swift in Sources */,
+				2374C786232FB6C700900BF0 /* CleengLoginAlertController.swift in Sources */,
+				2374C775232FB6C700900BF0 /* DispatchQueue+Extension.swift in Sources */,
+				2374C782232FB6C700900BF0 /* EqualLinesContentLabel.swift in Sources */,
+				2374C773232FB6C700900BF0 /* CleengUser.swift in Sources */,
+				2374C787232FB6C700900BF0 /* CleengLoginSignupViewControllers.swift in Sources */,
+				2374C77B232FB6C700900BF0 /* CleengGeneralTextViewController.swift in Sources */,
+				2374C776232FB6C700900BF0 /* ZappCleengSettingScreenManager.swift in Sources */,
+				2374C77E232FB6C700900BF0 /* CleengLoginAndSubscribeApi.swift in Sources */,
+				2374C770232FB6C700900BF0 /* CleengLoginAndSubscriptionController.swift in Sources */,
+				2374C777232FB6C700900BF0 /* CleengResetPasswordViewController.swift in Sources */,
+				2374C783232FB6C700900BF0 /* StoreProductsPurchaseManager.swift in Sources */,
+				2374C779232FB6C700900BF0 /* ZappCleengLogin.swift in Sources */,
+				2374C77C232FB6C700900BF0 /* CleengOffersViewController.swift in Sources */,
+				2374C771232FB6C700900BF0 /* CleengRestoreViewController.swift in Sources */,
+				2374C785232FB6C700900BF0 /* CleengSettingsBaseProtocol.swift in Sources */,
+				2374C778232FB6C700900BF0 /* CleengRedeemCouponViewController.swift in Sources */,
+				2374C77F232FB6C700900BF0 /* CleengProfileViewController.swift in Sources */,
+				2374C772232FB6C700900BF0 /* CleengSettingsSplitScreenViewController.swift in Sources */,
+				2374C781232FB6C700900BF0 /* CleengSettingsScreenViewController.swift in Sources */,
+				2374C784232FB6C700900BF0 /* ZappCleengConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2374C731232FB5C800900BF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2374C73B232FB5C800900BF0 /* BabyFirstCleengLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2374C738232FB5C800900BF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2374C72B232FB5C800900BF0 /* BabyFirstCleengLogin */;
+			targetProxy = 2374C737232FB5C800900BF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2374C73E232FB5C800900BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2374C73F232FB5C800900BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2374C741232FB5C800900BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.BabyFirstCleengLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2374C742232FB5C800900BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.BabyFirstCleengLogin;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2374C744232FB5C800900BF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BabyFirstCleengLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.BabyFirstCleengLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2374C745232FB5C800900BF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BabyFirstCleengLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicaster.BabyFirstCleengLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2374C726232FB5C800900BF0 /* Build configuration list for PBXProject "BabyFirstCleengLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2374C73E232FB5C800900BF0 /* Debug */,
+				2374C73F232FB5C800900BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2374C740232FB5C800900BF0 /* Build configuration list for PBXNativeTarget "BabyFirstCleengLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2374C741232FB5C800900BF0 /* Debug */,
+				2374C742232FB5C800900BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2374C743232FB5C800900BF0 /* Build configuration list for PBXNativeTarget "BabyFirstCleengLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2374C744232FB5C800900BF0 /* Debug */,
+				2374C745232FB5C800900BF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2374C723232FB5C800900BF0 /* Project object */;
+}
