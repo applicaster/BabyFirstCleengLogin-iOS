@@ -646,7 +646,7 @@ internal class CleengSignUpViewController : _CleengBaseSignViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        signButton.isEnabled = false
+        signButton.isEnabled = true
         signUpConfigureViews()
     }
     
