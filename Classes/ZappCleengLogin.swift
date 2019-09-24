@@ -114,12 +114,23 @@ import SwiftyStoreKit
      `ZPLoginProviderUserDataProtocol` api. Call this to check if user has access to one or more items.
      */
     
+    public func isUserComply(policies: [String : NSObject]) -> Bool {
+        var retVal = false
+        isUserComply(policies: policies,completion: { (isComply) in
+             retVal = isComply
+        })
+        return retVal
+    }
+    
     public func isUserComply(policies: [String : NSObject], completion: @escaping (Bool) -> ()) {
         var playableItems : [AnyObject] = []
         if let items = policies["playable_items"] as? [APPurchasableItem] {
             purchaseItemType = .purchasableItem
             playableItems.append(contentsOf: items)
         } else if let atomItems = policies["playable_items"] as? [APAtomEntryPlayable] {
+            purchaseItemType = .atomEntry
+            playableItems.append(contentsOf: atomItems)
+        } else if let atomItems = policies["playable_items"] as? [APAtomEntry] {
             purchaseItemType = .atomEntry
             playableItems.append(contentsOf: atomItems)
         }
