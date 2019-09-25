@@ -1410,7 +1410,7 @@ struct CleengOffer {
 
         if let shouldRemovePromotionIconValue = dictionary["should_hide_free_ribbon"] as? String {
             self.shouldRemovePromotionIcon = shouldRemovePromotionIconValue.boolValue()
-        } else if let shouldDisplayPromotionIconValue = dictionary["should_display_free_ribbon"] as? Bool {
+        } else if let shouldDisplayPromotionIconValue = dictionary["should_hide_free_ribbon"] as? Bool {
             self.shouldRemovePromotionIcon = shouldDisplayPromotionIconValue
         } else {
             self.shouldRemovePromotionIcon = false
