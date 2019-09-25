@@ -1355,7 +1355,7 @@ struct CleengOffer {
     
     var accessGranted: Bool = false
     
-    init(id: String, publisherEmail: String? = nil, title: String, description: String, currency: String, price: Double, iapIdentifier: String, country: String? = nil, period: String? = nil, isActive: Bool, isPromoted:Bool, shouldRemovePromotionIcon:Bool, url: URL? = nil, createdAt: Date? = nil, updatedAt: Date? = nil, expiresAt: Date? = nil, tags: [String]? = nil, accessGranted: Bool = false) {
+    init(id: String, publisherEmail: String? = nil, title: String, description: String, currency: String, price: Double, iapIdentifier: String, country: String? = nil, period: String? = nil, isActive: Bool, isPromoted: Bool, shouldRemovePromotionIcon: Bool, url: URL? = nil, createdAt: Date? = nil, updatedAt: Date? = nil, expiresAt: Date? = nil, tags: [String]? = nil, accessGranted: Bool = false) {
         self.id = id
         self.publisherEmail = publisherEmail
         self.title = title
