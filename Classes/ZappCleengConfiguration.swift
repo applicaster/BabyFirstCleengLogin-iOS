@@ -45,6 +45,7 @@ public struct ZappCleengConfiguration {
         case restoreButtonBackground = "cleeng_login_restore_button"
         case signUpButtonBackground = "cleeng_login_sign_up_button"
         case subscriptionBackground = "cleeng_login_subscription_component"
+        case subscriptionBackgroundPromoted = "cleeng_login_subscription_component_special"
         case subscriptionPromotion = "cleeng_login_promotion_icon"
         case subscribeButtonBackground = "cleeng_login_subscribe_button"
         case alertBackground = "cleeng_login_alert_component"

@@ -1342,6 +1342,9 @@ struct CleengOffer {
     let period: String?
     let isActive: Bool
     
+    var isPromoted: Bool = false
+    var shouldRemovePromotionIcon: Bool = false
+    
     let url: URL?
     let createdAt: Date?
     let updatedAt: Date?
@@ -1352,7 +1355,7 @@ struct CleengOffer {
     
     var accessGranted: Bool = false
     
-    init(id: String, publisherEmail: String? = nil, title: String, description: String, currency: String, price: Double, iapIdentifier: String, country: String? = nil, period: String? = nil, isActive: Bool, url: URL? = nil, createdAt: Date? = nil, updatedAt: Date? = nil, expiresAt: Date? = nil, tags: [String]? = nil, accessGranted: Bool = false) {
+    init(id: String, publisherEmail: String? = nil, title: String, description: String, currency: String, price: Double, iapIdentifier: String, country: String? = nil, period: String? = nil, isActive: Bool, isPromoted:Bool, shouldRemovePromotionIcon:Bool, url: URL? = nil, createdAt: Date? = nil, updatedAt: Date? = nil, expiresAt: Date? = nil, tags: [String]? = nil, accessGranted: Bool = false) {
         self.id = id
         self.publisherEmail = publisherEmail
         self.title = title
@@ -1363,6 +1366,8 @@ struct CleengOffer {
         self.country = country
         self.period = period
         self.isActive = isActive
+        self.shouldRemovePromotionIcon = shouldRemovePromotionIcon
+        self.isPromoted = isPromoted
         
         self.url = url
         self.createdAt = createdAt
@@ -1389,12 +1394,24 @@ struct CleengOffer {
         } else {
             optionalPrice = nil
         }
-        
+
         guard let price = optionalPrice else { return nil }
-        
+
         guard let iap = dictionary["appleProductId"] as? String else { return nil }
         self.iapIdentifier = iap
-        
+        let isPromoted: Bool
+        if let isPromotedValue = dictionary["is_voucher_promoted"] as? String {
+            isPromoted = isPromotedValue.boolValue()
+        } else if let isPromotedValue = dictionary["is_voucher_promoted"] as? Bool {
+            isPromoted = isPromotedValue
+        }
+
+        if let shouldDisplayPromotionIconValue = dictionary["should_display_free_ribbon"] as? String {
+            self.shouldRemovePromotionIcon = !shouldDisplayPromotionIconValue.boolValue()
+        } else if let shouldDisplayPromotionIconValue = dictionary["should_display_free_ribbon"] as? Bool {
+            self.shouldRemovePromotionIcon = !shouldDisplayPromotionIconValue
+        }
+
         let isActiveValue = dictionary["active"]
         let isActive: Bool
         if let isActiveString = isActiveValue as? String, isActiveString.lowercased() == "true" {
@@ -1404,40 +1421,41 @@ struct CleengOffer {
         } else {
             isActive = false
         }
-        
+
         self.id = id
         self.publisherEmail = dictionary["publisherEmail"] as? String
         self.title = (dictionary["title"] as? String) ?? ""
         self.description = (dictionary["description"] as? String) ?? ""
         self.currency = currency
         self.price = price
-        
+
         self.country = dictionary["country"] as? String
         self.period = dictionary["period"] as? String
         self.isActive = isActive
-        
+        self.isPromoted = isPromoted
+
         if let urlString = dictionary["url"] as? String {
             self.url = URL(string: urlString)
         }
         else { self.url = nil }
-        
+
         if let ti = dictionary["createdAt"] as? TimeInterval {
             self.createdAt = Date(timeIntervalSince1970: ti)
         }
         else { self.createdAt = nil }
-        
+
         if let ti = dictionary["updatedAt"] as? TimeInterval {
             self.updatedAt = Date(timeIntervalSince1970: ti)
         }
         else { self.updatedAt = nil }
-        
+
         if let ti = dictionary["expiresAt"] as? TimeInterval {
             self.expiresAt = Date(timeIntervalSince1970: ti)
         }
         else { self.expiresAt = nil }
-        
+
         self.tags = dictionary["accessToTags"] as? [String]
-        
+
         if let flag = dictionary["accessGranted"] as? Bool {
             self.accessGranted = flag
         }

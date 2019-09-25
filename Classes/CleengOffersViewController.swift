@@ -518,9 +518,16 @@ class CleengOfferCollectionViewCell : UICollectionViewCell {
         
         offerAndProduct = (offer: offer, product: product)
         
-        backgroundImageView.setZappStyle(using: stylesManager,
-                                         withAsset: .subscriptionBackground,
-                                         stretchableImage: true)
+        if offer.isPromoted == true {
+            backgroundImageView.setZappStyle(using: stylesManager,
+                                             withAsset: .subscriptionBackgroundPromoted,
+                                             stretchableImage: true)
+        } else {
+            backgroundImageView.setZappStyle(using: stylesManager,
+                                             withAsset: .subscriptionBackground,
+                                             stretchableImage: true)
+        }
+        
         subscribeButton.setZappStyle(using: stylesManager,
                                      backgroundAsset: .subscribeButtonBackground,
                                      title: "\(subscribeAction) \(product.formattedPrice)",
@@ -550,7 +557,8 @@ class CleengOfferCollectionViewCell : UICollectionViewCell {
                                   stretchableImage: true)
         
         tagLabel.text = tagText
-        tagImageView.superview?.isHidden = (tagText == nil && tagImageView.image == nil)
+
+        tagImageView.superview?.isHidden = (tagText == nil && tagImageView.image == nil) || offer.shouldRemovePromotionIcon
         
         titleLabel.setZappStyle(using: stylesManager,
                                 text: product.localizedTitle,
