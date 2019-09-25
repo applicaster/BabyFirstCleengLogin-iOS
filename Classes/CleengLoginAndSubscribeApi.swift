@@ -1342,8 +1342,8 @@ struct CleengOffer {
     let period: String?
     let isActive: Bool
     
-    var isPromoted: Bool = false
-    var shouldRemovePromotionIcon: Bool = false
+    let isPromoted: Bool
+    let shouldRemovePromotionIcon: Bool
     
     let url: URL?
     let createdAt: Date?
@@ -1399,17 +1399,21 @@ struct CleengOffer {
 
         guard let iap = dictionary["appleProductId"] as? String else { return nil }
         self.iapIdentifier = iap
-        let isPromoted: Bool
+        
         if let isPromotedValue = dictionary["is_voucher_promoted"] as? String {
-            isPromoted = isPromotedValue.boolValue()
+            self.isPromoted = isPromotedValue.boolValue()
         } else if let isPromotedValue = dictionary["is_voucher_promoted"] as? Bool {
-            isPromoted = isPromotedValue
+            self.isPromoted = isPromotedValue
+        } else {
+            self.isPromoted = false
         }
 
-        if let shouldDisplayPromotionIconValue = dictionary["should_display_free_ribbon"] as? String {
-            self.shouldRemovePromotionIcon = !shouldDisplayPromotionIconValue.boolValue()
+        if let shouldRemovePromotionIconValue = dictionary["should_hide_free_ribbon"] as? String {
+            self.shouldRemovePromotionIcon = shouldRemovePromotionIconValue.boolValue()
         } else if let shouldDisplayPromotionIconValue = dictionary["should_display_free_ribbon"] as? Bool {
-            self.shouldRemovePromotionIcon = !shouldDisplayPromotionIconValue
+            self.shouldRemovePromotionIcon = shouldDisplayPromotionIconValue
+        } else {
+            self.shouldRemovePromotionIcon = false
         }
 
         let isActiveValue = dictionary["active"]
@@ -1432,7 +1436,6 @@ struct CleengOffer {
         self.country = dictionary["country"] as? String
         self.period = dictionary["period"] as? String
         self.isActive = isActive
-        self.isPromoted = isPromoted
 
         if let urlString = dictionary["url"] as? String {
             self.url = URL(string: urlString)
