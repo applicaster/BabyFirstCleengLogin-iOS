@@ -117,7 +117,7 @@ import SwiftyStoreKit
     public func isUserComply(policies: [String : NSObject]) -> Bool {
         var retVal = false
         isUserComply(policies: policies,completion: { (isComply) in
-             retVal = isComply
+            retVal = isComply
         })
         return retVal
     }
@@ -213,13 +213,45 @@ import SwiftyStoreKit
      */
     private func addVerifyUserCall(forItem item: AnyObject, allItems: [AnyObject], callId: String) -> (canUpdateSuccess: Bool, canUpdateFailure: Bool) {
         
-        
         let api: CleengLoginAndSubscribeApi
+        
+        let checkApiForItemByIdentifier = {  (_ item: AnyObject) -> CleengLoginAndSubscribeApi? in
+            var itemApi: CleengLoginAndSubscribeApi?
+            for hashableitem in self.apiForItem.keys {
+                if let atomEntry = hashableitem as? APAtomEntry,
+                    let id = atomEntry.identifier {
+                    let atomEntryID: String?
+                    
+                    switch (item) {
+                    case is APAtomEntry:
+                        atomEntryID = (item as! APAtomEntry).identifier
+                        break
+                    case is APAtomEntryPlayable:
+                        atomEntryID = (item as! APAtomEntryPlayable).identifier
+                        break
+                    case is APAtomVideoEntry:
+                        atomEntryID = (item as! APAtomVideoEntry).identifier
+                        break
+                    default:
+                        atomEntryID = nil
+                    }
+                    if atomEntryID == id {
+                        itemApi = self.apiForItem[atomEntry]
+                    }
+                }
+            }
+            return itemApi
+        }
+        
         if let itemAPI = apiForItem[item as? AnyHashable] {
             api = itemAPI
         } else {
-            api = CleengLoginAndSubscribeApi(item: item, publisherId: publisherId)
-            apiForItem[item as? AnyHashable] = api
+            if let itemAPI = checkApiForItemByIdentifier(item) {
+                api = itemAPI
+            } else {
+                api = CleengLoginAndSubscribeApi(item: item, publisherId: publisherId)
+                apiForItem[item as? AnyHashable] = api
+            }
         }
         
         let onRefresh: RefreshTokenEnded = { [weak self] (isLoggedIn) in
