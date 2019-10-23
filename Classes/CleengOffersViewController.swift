@@ -216,9 +216,9 @@ class CleengOffersViewController : UIViewController, UICollectionViewDataSource,
             layout.minimumInteritemSpacing = 8
             layout.estimatedItemSize = CGSize(width: 302, height: 144)
         } else {
-            layout.sectionInset = UIEdgeInsets(top: 58, left: 40, bottom: 300, right: 40)
-            layout.minimumLineSpacing = 18
-            layout.minimumInteritemSpacing = 18
+//            layout.sectionInset = UIEdgeInsets(top: 58, left: 40, bottom: 300, right: 40)
+//            layout.minimumLineSpacing = 18
+//            layout.minimumInteritemSpacing = 18
             layout.estimatedItemSize = CGSize(width: 302, height: 237)
         }
     }
