@@ -6,14 +6,14 @@
 	"platform": "ios",
 	"author_name": "Roi Kedarya",
 	"author_email": "r.kedarya@applicaster.com",
-	"manifest_version": "1.5.0",
+	"manifest_version": "2.0.0",
 	"name": "BabyFirstCleengLogin",
 	"description": "A plugin for Cleeng login and subscription",
 	"type": "login",
 	"screen": true,
 	"identifier": "BabyFirstCleengLogin",
 	"dependency_name": "BabyFirstCleengLogin",
-	"dependency_version": "1.5.0",
+	"dependency_version": "2.0.0",
 	"dependency_repository_url": [
 		"git@github.com:applicaster/BabyFirstCleengLogin-iOS.git"
 	],
@@ -22,7 +22,7 @@
 		"5af949534da8f300080050f9",
 		"5cc6f5d65d639a000cf17876"
 	],
-	"min_zapp_sdk": "12.1.0-Dev",
+	"min_zapp_sdk": "13.0.0-Dev",
 	"deprecated_since_zapp_sdk": "",
 	"unsupported_since_zapp_sdk": "",
 	"react_native": false,
