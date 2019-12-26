@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
         'cleeng-storyboard' => ['Storyboard/*.{storyboard,png,xib}']
     }
     c.dependency 'ZappPlugins'
+    c.dependency 'ZappLoginPluginsSDK'
     c.dependency 'ApplicasterSDK'
     c.dependency 'FBSDKLoginKit'
     c.dependency 'FBSDKCoreKit'
