@@ -34,7 +34,7 @@ class CleengSettingsSplitScreenViewController: UISplitViewController, UITableVie
         let bundleURL = podBundle.url(forResource: "cleeng-storyboard", withExtension: "bundle")!
         let bundle = Bundle(url: bundleURL)!
         let cleengStoryboard = UIStoryboard(name: "CleengMain", bundle: bundle)
-        let loginProvider = ZPLoginManager.sharedInstance.createWithUserData()
+        let loginProvider = ZAAppConnector.sharedInstance().pluginsDelegate?.loginPluginsManager?.createWithUserData()
         
         //adding master view controller
         masterViewController = cleengStoryboard.instantiateViewController(withIdentifier: "Settings") as? CleengSettingsScreenViewController

@@ -26,7 +26,7 @@ class ZappCleengSettingScreenManager: NSObject, ZPPluggableScreenProtocol {
         let bundleURL = podBundle.url(forResource: "cleeng-storyboard", withExtension: "bundle")!
         let bundle = Bundle(url: bundleURL)!
         let cleengStoryboard = UIStoryboard(name: "CleengMain", bundle: bundle)
-        let loginProvider = ZPLoginManager.sharedInstance.createWithUserData()
+        let loginProvider = ZAAppConnector.sharedInstance().pluginsDelegate?.loginPluginsManager?.createWithUserData()
         
         var vc: UIViewController = UI_USER_INTERFACE_IDIOM() == .phone ? cleengStoryboard.instantiateViewController(withIdentifier: "Settings") : cleengStoryboard.instantiateViewController(withIdentifier: "SettingsSplit")
         
