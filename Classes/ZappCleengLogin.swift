@@ -477,6 +477,7 @@ import SwiftyStoreKit
         }
         
         if controller.presentingViewController == nil {
+            controller.modalPresentationStyle = .fullScreen
             UIViewController.topMostViewController?.present(controller, animated: true, completion: onPresentCompletion)
         }
     }
