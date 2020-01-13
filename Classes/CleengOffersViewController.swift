@@ -688,7 +688,7 @@ class CleengOfferCollectionHeaderView : UICollectionReusableView {
     
     fileprivate func updateViews() {
         guard let manager = manager else { return }
-        
+        headerLabel.isHidden =  (manager.api.cleengLoginState == .loggedIn)
         goToSignInButton.isHidden = (manager.api.cleengLoginState == .loggedIn)
         if(manager.digicelUser){
             goToSignInButton.isHidden = true
