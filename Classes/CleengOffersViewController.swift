@@ -179,6 +179,7 @@ class CleengOffersViewController : UIViewController, UICollectionViewDataSource,
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+        updateCollectionViewDirection()
         updatedCellSize()
         updateCollectionViewGradients(continuous: false, animated: false)
         collectionView.collectionViewLayout.invalidateLayout()
