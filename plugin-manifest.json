@@ -6,14 +6,14 @@
 	"platform": "ios",
 	"author_name": "Roi Kedarya",
 	"author_email": "r.kedarya@applicaster.com",
-	"manifest_version": "2.2.0",
+	"manifest_version": "2.3.0",
 	"name": "BabyFirstCleengLogin",
 	"description": "A plugin for Cleeng login and subscription",
 	"type": "login",
 	"screen": true,
 	"identifier": "BabyFirstCleengLogin",
 	"dependency_name": "BabyFirstCleengLogin",
-	"dependency_version": "2.2.0",
+	"dependency_version": "2.3.0",
 	"dependency_repository_url": [
 		"git@github.com:applicaster/BabyFirstCleengLogin-iOS.git"
 	],
